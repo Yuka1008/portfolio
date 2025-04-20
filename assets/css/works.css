@@ -233,7 +233,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assets/images/works/works_icon-arrow.svg);
+    background-image: url(../../assets/images/works/works_icon-arrow.svg);
     background-size: contain;
 }
 
