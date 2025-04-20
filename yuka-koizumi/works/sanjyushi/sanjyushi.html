@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>デザイナー、こいずみ　ゆうか。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="「クレープ原宿三銃士」公式ウェブサイトの制作意図や、レイアウト・デザインの工夫について紹介しています。">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/common/icon_180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/common/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/common/icon_16x16.png">
+
+    <!-- <meta property="og:url" content="https://yuka_koizumi-portfolio.com/"> -->
+    <meta property="og:title" content="デザイナー、こいずみ　ゆうか。">
+    <meta property="og:site_name" content="Yuka Koizumi Portfolio">
+    <meta property="og:description" content="「クレープ原宿三銃士」公式ウェブサイトの制作意図や、レイアウト・デザインの工夫について紹介しています。">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://yuka_koizumi-portfolio.com/assets/images/common/ogimage.jpg"> -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/works.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ruo5tfz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Mega:wght@100..900&family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="/assets/js/common.js" defer></script>
+    <script src="/assets/js/works.js" defer></script>
+</head>
+
+<body id="top">
+    <!-- header -->
+    <header class="header">
+        <h1 class="header__title">
+            <a href="#top">デザイナー、<br>こいずみ<br>ゆうか。</a>
+        </h1>
+        <button class="header__burger-button">
+            <span class="header__burger-text--menu">MENU</span>
+            <span class="header__burger-text--close">CLOSE</span>
+        </button>
+        <!-- nav -->
+        <nav class="header__nav js-drawer-open">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="/#top" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-1.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像1枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">Home</h3>
+                            <p class="header__nav-label">ホーム</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="header__nav-item header__nav-item--about">
+                    <a href="/about/about.html" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-2.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像2枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">About</h3>
+                            <p class="header__nav-label">わたしのこと</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="header__nav-item header__nav-item--works">
+                    <a href="/#works" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-3.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像3枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">Works</h3>
+                            <p class="header__nav-label">制作したもの</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sns-list">
+                <li class="sns-list__item">
+                    <a href="https://note.com/__108ko" target="_blank" rel="noopener noreferrer" aria-label="noteを開く" class="sns-list__link">
+                        <img src="/assets/images/common/icon_note.svg" alt="snsリンク（Note）" class="sns-list__icon">
+                    </a>
+                </li>
+                <li class="sns-list__item">
+                    <a href="https://pin.it/6iFYx3alK" target="_blank" rel="noopener noreferrer" aria-label="Pinterestを開く" class="sns-list__link">
+                        <img src="/assets/images/common/icon_pinterest.svg" alt="snsリンク（Pinterest）" class="sns-list__icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- section works -->
+        <section class="works js-works js-parallax-trigger">
+            <div class="works__inner">
+                <div class="works__title-block view view-slideup on">
+                    <h1 class="works__title">クレープ原宿三銃士</h1>
+                    <div class="works__meta">
+                        <p class="works__tag">Web Site</p>
+                        <p class="works__date">2024.11</p>
+                    </div>
+                </div>
+                <div class="works__main-image js-works-image">
+                    <img src="/assets/images/works/sanjyushi/sanjyushi_mock-1.webp" width="2160" height="1440" alt="クレープ原宿三銃士Websiteのモックアップ画像">
+                </div>
+                <p class="works__description animation-fadein js-observe-target">
+                    <span>
+                        フランス発祥のクレープ文化を継承し、1970年代に日本で広く展開された「クレープ原宿三銃士」。その復活プロジェクトの一環として、公式ウェブサイトを制作しました。ブランドの歴史と高級感を表現しながら、フランチャイズ展開を促進するための情報発信を重視した設計としました。
+                    </span>
+                    <span class="works__text">
+                        Web Site :
+                        <a class="works__url" href="https://azurebat8.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">
+                            https://azurebat8.sakura.ne.jp/
+                        </a>
+                    </span>
+                </p>
+                <div class="works__scroll-area js-button-trigger">
+                    <div class="works__sub-image js-parallax">
+                        <img src="/assets/images/works/sanjyushi/sanjyushi_mock-2.webp" width="3000" height="2000" loading="lazy" alt="クレープ原宿三銃士Websiteのモックアップ画像">
+                    </div>
+                    <div class="works__list">
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                ターゲット
+                            </div>
+                            <div class="works__body">
+                                フランチャイズ展開を検討しているビジネスパーソンや飲食業関係者、店舗の認知拡大を狙う一般のクレープファン。
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                目的
+                            </div>
+                            <div class="works__body">
+                                ブランドの魅力やコンセプトを伝え、フランチャイズ加盟希望者に向けた情報を分かりやすく発信すること。また、店舗の認知度向上を目指し、ブランドの発展を支援するため。
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                情報設計
+                            </div>
+                            <div class="works__body">
+                                クレープ原宿三銃士のブランドストーリーや強みを明確に伝えるため、シンプルながらも視覚的に洗練された構成を採用。訪問者が求める情報にスムーズにアクセスできるよう設計しました。ブランドの信頼性を伝えるコンテンツを充実させ、加盟への関心を高めるための工夫を施しました。
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                デザイン
+                            </div>
+                            <div class="works__body">
+                                「三銃士」の世界観をモチーフに、フランスのクラシカルなエレガンスを表現。深みのあるストームグレーとアンティークホワイトを基調に、アンティークゴールドやパリシアングレーをアクセントカラーとして使用しました。サイト内のタイポグラフィや装飾には、三銃士を象徴する剣や羽のモチーフを取り入れることで、ブランドの物語性を強調。視覚的な一貫性を持たせることで、洗練された高級感と歴史を感じさせるデザインに仕上げました。
+                                <div class="works__color-image">
+                                    <img src="/assets/images/works/sanjyushi/sanjyushi_color.webp" width="1664" height="300" alt="サイトデザインで使用したカラーコード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                制作範囲・期間
+                            </div>
+                            <div class="works__body">
+                                企画・ワイヤーフレーム : 1週間<br>
+                                デザイン : 3週間<br>
+                                コーディング : 2週間
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                使用ツール
+                            </div>
+                            <div class="works__body">
+                                Illustrator / Photoshop / Lightroom / Premium Pro / Figma / Visual Studio Code
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__comps">
+                        <div class="works__comps-column">
+                            <div class="works__comps-pc">
+                                <img src="/assets/images/works/sanjyushi/sanjyushi_pc-comp.jpg" width="1440" height="10380" loading="lazy" alt="クレープ原宿三銃士 PCデザインカンプ">
+                            </div>
+                            <div class="works__comps-sp">
+                                <picture>
+                                    <source srcset="/assets/images/works/sanjyushi/sanjyushi_sp-comp_pc.jpg" media="(min-width: 768px)" width="375" height="8550" loading="lazy">
+                                    <img src="/assets/images/works/sanjyushi/sanjyushi_sp-comp_sp.png" width="830" height="4767" loading="lazy" alt="クレープ原宿三銃士 SPデザインカンプ">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__button-wrapper">
+                    <a href="/#works" class="works__button--back">
+                        <span class="works__button-arrow"></span>
+                        <span class="works__button-text">All View</span>
+                    </a>
+                </div>
+            </div>
+            <div class="works__button js-button">
+                <a class="works__link" href="https://azurebat8.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">
+                    <span class="works__link-text">
+                        Visit Website
+                    </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__wrapper js-footer">
+                <div id="contact" class="contact">
+                    <div class="contact__inner">
+                        <p class="contact__title">
+                            Contact
+                        </p>
+                        <div class="contact__mail">
+                            <a href="mailto:108koi.yu@gmail.com" class="contact__link">108koi.yu@gmail.com</a>
+                            <span class="contact__arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__block">
+                        <ul class="sns-list sns-list--white">
+                            <li class="sns-list__item">
+                                <a href="https://note.com/__108ko" class="sns-list__link" target="_blank" rel="noopener noreferrer" aria-label="noteを開く">
+                                    <img src="/assets/images/common/icon_note.svg" alt="snsリンク（Note）" class="sns-list__icon">
+                                </a>
+                            </li>
+                            <li class="sns-list__item">
+                                <a href="https://pin.it/6iFYx3alK" class="sns-list__link" target="_blank" rel="noopener noreferrer" aria-label="Pinterestを開く">
+                                    <img src="/assets/images/common/icon_pinterest-white.svg" alt="snsリンク（Pinterest）" class="sns-list__icon">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__button">
+                            <a href="#top" class="footer__link">(Back to top)</a>
+                        </div>
+                    </div>
+                    <p class="footer__copyright">© 2025 Yuka Koizumi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
