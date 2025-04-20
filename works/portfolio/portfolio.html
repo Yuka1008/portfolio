@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>デザイナー、こいずみ　ゆうか。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="ポートフォリオサイトの制作意図や、レイアウト・デザインの工夫について紹介しています。">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/common/icon_180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/common/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/common/icon_16x16.png">
+
+    <!-- <meta property="og:url" content="https://yuka_koizumi-portfolio.com/"> -->
+    <meta property="og:title" content="デザイナー、こいずみ　ゆうか。">
+    <meta property="og:site_name" content="Yuka Koizumi Portfolio">
+    <meta property="og:description" content="ポートフォリオサイトの制作意図や、レイアウト・デザインの工夫について紹介しています。">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="https://yuka_koizumi-portfolio.com/assets/images/common/ogimage.jpg"> -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/works.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ruo5tfz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lexend+Mega:wght@100..900&family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="/assets/js/common.js" defer></script>
+    <script src="/assets/js/works.js" defer></script>
+</head>
+
+<body id="top">
+    <!-- header -->
+    <header class="header">
+        <h1 class="header__title">
+            <a href="#top">デザイナー、<br>こいずみ<br>ゆうか。</a>
+        </h1>
+        <button class="header__burger-button">
+            <span class="header__burger-text--menu">MENU</span>
+            <span class="header__burger-text--close">CLOSE</span>
+        </button>
+        <!-- nav -->
+        <nav class="header__nav js-drawer-open">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="/#top" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-1.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像1枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">Home</h3>
+                            <p class="header__nav-label">ホーム</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="header__nav-item header__nav-item--about">
+                    <a href="/about/about.html" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-2.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像2枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">About</h3>
+                            <p class="header__nav-label">わたしのこと</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="header__nav-item header__nav-item--works">
+                    <a href="/#works" class="header__nav-link">
+                        <div class="header__nav-img">
+                            <img src="/assets/images/common/intro_img-3.webp" width="1200" height="1800" alt="ヘッダーナビゲーション画像3枚目">
+                        </div>
+                        <div class="header__nav-content">
+                            <h3 class="header__nav-title">Works</h3>
+                            <p class="header__nav-label">制作したもの</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sns-list">
+                <li class="sns-list__item">
+                    <a href="https://note.com/__108ko" target="_blank" rel="noopener noreferrer" aria-label="noteを開く" class="sns-list__link">
+                        <img src="/assets/images/common/icon_note.svg" alt="snsリンク（Note）" class="sns-list__icon">
+                    </a>
+                </li>
+                <li class="sns-list__item">
+                    <a href="https://pin.it/6iFYx3alK" target="_blank" rel="noopener noreferrer" aria-label="Pinterestを開く" class="sns-list__link">
+                        <img src="/assets/images/common/icon_pinterest.svg" alt="snsリンク（Pinterest）" class="sns-list__icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- section works -->
+        <section class="works js-works js-parallax-trigger">
+            <div class="works__inner">
+                <div class="works__title-block view view-slideup on">
+                    <h1 class="works__title">ポートフォリオ</h1>
+                    <div class="works__meta">
+                        <p class="works__tag">Web Site</p>
+                        <p class="works__date">2025.03</p>
+                    </div>
+                </div>
+                <div class="works__main-image js-works-image">
+                    <img src="/assets/images/works/portfolio/portfolio_mock-1.webp" width="2160" height="1440" alt="ポートフォリオサイトのモックアップ画像">
+                </div>
+                <p class="works__description animation-fadein js-observe-target">
+                    就職活動に向けて、これまでの歩みや制作物をまとめたポートフォリオサイトを制作しました。見てくださる方が心地よくページをめくれるよう、余白を大切にしたやわらかなデザインを意識しながらも、タイポグラフィやレイアウトにさりげなく自分らしいエッセンスを加えました。シンプルな中にも温度感が伝わるような、“人となり”を感じていただけるポートフォリオを目指しました。
+                </p>
+                <div class="works__scroll-area js-button-trigger">
+                    <div class="works__sub-image js-parallax">
+                        <img src="/assets/images/works/portfolio/portfolio_mock2.webp" width="3000" height="2000" loading="lazy" alt="ポートフォリオサイトのモックアップ画像">
+                    </div>
+                    <div class="works__list">
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                ターゲット
+                            </div>
+                            <div class="works__body">
+                                Web制作会社の採用担当者の方々
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                目的
+                            </div>
+                            <div class="works__body">
+                                就職活動を進めるにあたり、自身の経歴や大切にしている価値観、制作への向き合い方を丁寧に伝えること。そして、これまで学んできたスキルや実績を通して、仕事への姿勢や、今後の成長意欲を感じていただくこと。
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                情報設計
+                            </div>
+                            <div class="works__body">
+                                採用担当者の方が、短時間でも全体像を把握できるよう、閲覧の流れを意識して構成を組み立てました。最初のTOPページでは世界観やビジュアルを通して雰囲気をつかんでいただき、Aboutページでは自身の経歴や考え方、強みを紹介しています。その上で、Worksページでは制作物を通してスキルや取り組み姿勢を具体的に伝える構成としました。視覚的な印象と内面のストーリーをバランスよく伝えられるよう意識しています。
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                デザイン
+                            </div>
+                            <div class="works__body">
+                                「落ち着き」「信頼感」「あたたかさ」をキーワードに、淡いグレートーンを基調とした柔らかい印象のデザインに仕上げました。タイポグラフィには個性を感じられるフォントを採用し、整然としつつも、優しい余白やレイアウトで“私らしさ”を表現しています。また、写真や装飾要素を使いすぎず、あくまで内容が引き立つようシンプルに構成しました。あたたかく丁寧な人柄が伝わるような、そんな世界観を意識しています。
+                                <div class="works__color-image">
+                                    <img src="/assets/images/works/portfolio/portfolio_color.webp" width="1664" height="300" alt="サイトデザインで使用したカラーコード">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                制作範囲・期間
+                            </div>
+                            <div class="works__body">
+                                企画・構成 : 5日<br>
+                                デザイン : 2週間<br>
+                                コーディング : 3週間
+                            </div>
+                        </div>
+                        <div class="works__list-item">
+                            <div class="works__head">
+                                使用ツール
+                            </div>
+                            <div class="works__body">
+                                Illustrator / Photoshop / Figma / Visual Studio Code
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__comps">
+                        <div class="works__comps-column">
+                            <div class="works__comps-pc">
+                                <img src="/assets/images/works/portfolio/portfolio_pc-comp.webp" width="1204" height="5000" loading="lazy" alt="ポートフォリオ PCデザインカンプ">
+                            </div>
+                            <div class="works__comps-sp">
+                                <picture>
+                                    <source srcset="/assets/images/works/portfolio/portfolio_sp-comp_pc.webp" media="(min-width: 768px)" width="322" height="5004" loading="lazy">
+                                    <img src="/assets/images/works/portfolio/portfolio_sp-comp_sp.webp" width="1415" height="5000" loading="lazy" alt="ポートフォリオ SPデザインカンプ">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__button-wrapper">
+                    <a href="/#works" class="works__button--back">
+                        <span class="works__button-arrow"></span>
+                        <span class="works__button-text">All View</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__wrapper js-footer">
+                <div id="contact" class="contact">
+                    <div class="contact__inner">
+                        <p class="contact__title">
+                            Contact
+                        </p>
+                        <div class="contact__mail">
+                            <a href="mailto:108koi.yu@gmail.com" class="contact__link">108koi.yu@gmail.com</a>
+                            <span class="contact__arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__block">
+                        <ul class="sns-list sns-list--white">
+                            <li class="sns-list__item">
+                                <a href="https://note.com/__108ko" class="sns-list__link" target="_blank" rel="noopener noreferrer" aria-label="noteを開く">
+                                    <img src="/assets/images/common/icon_note.svg" alt="snsリンク（Note）" class="sns-list__icon">
+                                </a>
+                            </li>
+                            <li class="sns-list__item">
+                                <a href="https://pin.it/6iFYx3alK" class="sns-list__link" target="_blank" rel="noopener noreferrer" aria-label="Pinterestを開く">
+                                    <img src="/assets/images/common/icon_pinterest-white.svg" alt="snsリンク（Pinterest）" class="sns-list__icon">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__button">
+                            <a href="#top" class="footer__link">(Back to top)</a>
+                        </div>
+                    </div>
+                    <p class="footer__copyright">© 2025 Yuka Koizumi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
