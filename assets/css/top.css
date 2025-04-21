@@ -668,12 +668,13 @@
 
     .works-card__title {
         font-size: 2.4rem;
+        padding: 8px 0;
     }
 
     .works-card__description {
         font-size: 1.4rem;
         line-height: 2.14286;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     .works__list span {
@@ -683,7 +684,7 @@
 
     .works-card__button {
         text-align: left;
-        padding-top: 40px;
+        padding-top: 32px;
     }
 
     .works-card__button-text {
