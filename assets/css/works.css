@@ -190,7 +190,7 @@
 .works__comps-sp img,
 .works__comps-sp picture {
     filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.25));
-    width: 100%;
+    transform: translateZ(0);
 }
 
 .works__button-wrapper {
@@ -409,10 +409,6 @@
 
     .works__comps-pc {
         margin-bottom: 40px;
-    }
-
-    .works__comps-sp img {
-        width: 100%;
     }
 
     .works__button-wrapper {
